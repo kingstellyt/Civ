@@ -1,0 +1,68 @@
+# -----------------------------------------------------------
+#  Categories
+#  ----------
+#
+#  Categories are a way of grouping quests.
+#  When a player uses /quests, a menu of categories will be presented to them.
+#  When a player clicks on a category, a list of quests under that category will show.
+#  If categories are disabled, all quests will be shown under one big GUI.
+#  Players can access specific categories by command using /quests c [category].
+#  If a quest does not have a category, it will not be shown.
+# -----------------------------------------------------------
+categories:
+  Starter:
+    display:
+      name: "§3Starter Achievements"
+      lore:
+        - "&7Complete these quests to"
+        - "&7start your journey"
+        - "&7Through CivMC"
+      type: "COOKIE"
+  Exploration:
+    display:
+      name: "§3Exploration Achievements"
+      lore:
+        - "&7Explore the world of CivMC"
+      type: "LEATHER_BOOTS"
+  Community:
+    display:
+      name: "§3Community Achievements"
+      lore:
+        - "&7Interact with the complex"
+        - "&7Community of CivMC"
+      type: "CAKE"
+  Combat:
+    display:
+      name: "§3Combat Achievements"
+      lore:
+        - "&7Risk your life and fight"
+        - "&7in the game of CivMC"
+      type: "IRON_SWORD"
+  Building:
+    display:
+      name: "§3Building Achievements"
+      lore:
+        - "&7Build structures to inspire"
+        - "&7citizens and visitors in CivMC"
+      type: "BRICKS"
+  Mining:
+    display:
+      name: "§3Mining Achievements"
+      lore:
+        - "&7Mine your way to riches"
+        - "&7to fund your endevours on CivMC"
+      type: "DIAMOND_PICKAXE"
+  Farming:
+    display:
+      name: "§3Farming Achievements"
+      lore:
+        - "&7Feed the world of CivMC"
+      type: "DIAMOND_HOE"
+  Grinding:
+    display:
+      name: "§3Grinding Achievements"
+      lore:
+        - "&7Not everything can be fun"
+        - "&7sometimes you just have to grind"
+        - "&7in the world of CivMC "
+      type: "GRINDSTONE"

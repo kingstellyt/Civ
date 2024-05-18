@@ -1,0 +1,48 @@
+# The name of this file is the quest ID. It must be alphanumeric and unique.
+
+# Everything inside of this section defines tasks the player must complete to progress.
+tasks:
+ command:
+    type: "command"
+    command: "global"
+    ignore-case: true 
+
+# Everything inside of this section defines the display item.
+display:
+  name: "&bA whole new world!"
+  # This is the lore of the item if the player has not started the quest. This allows color codes and task/player placeholders.
+  lore-normal:
+    - "&7say hi in global chat!"
+    - ""
+    - "&7This quest requires you to:"
+    - "&7 - Run the /global Command"
+    - ""
+  # This lore will be appended to the bottom of the above lore when the player starts their quest.
+  # To get the players progress through a task, use {TASKID:progress}  and replace TASKID with the ID of the task.
+  lore-started:
+    - ""
+    - "&7Your current progression:"
+    - "&7 - &2{command:progress}&2&f/&21 &fcommands run"
+  # This is the material of the item. It is recommended to stick to bukkit names.
+  type: "COOKIE"
+# List all commands to be executed by the server when the player completes the quest. Use {player} to get the players name.
+rewards:
+  - "give {player} cooked_beef 10"
+rewardstring:
+ - " &6 Well done!"
+ - " &6 Communication is key in CivMC"
+ - " &6 Building friendships and connections are important"
+ - " &6 To securing your own succes with whatever you may plan"
+ - " &6 Being known makes it easier to be trusted"
+# Progress placeholders are used exclusively for the bossbar and actionbar.
+# Use the name of the task, or '*' for all tasks.
+progress-placeholders:
+  '*': "&f{command:progress}&7/1 commands run"
+
+# Everything inside this section define quest-specific options
+options:
+  category: "Starter"
+  repeatable: false
+  sort-order: 2
+  requires:
+   - "First"

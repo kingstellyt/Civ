@@ -1,0 +1,34 @@
+# The name of this file is the quest ID. It must be alphanumeric and unique.
+
+tasks:
+ command:
+    type: "command"
+    command: "ott"
+    ignore-case: true 
+
+display:
+  name: "&bWhere am I?"
+  lore-normal:
+    - "&7Use the \"Ott to <player>\" command"
+    - "&7To use your one time teleport"
+    - "&7and save yourself some walking"
+    - ""
+    - "&7This quest requires you to:"
+    - "&7 - Run the /ott Command"
+    - ""
+  lore-started:
+    - ""
+    - "&7Your current progression:"
+    - "&7 - &2{command:progress}&2&f/&21 &fcommands run"
+  type: "ENDER_PEARL"
+rewards:
+  - "give {player} cooked_beef 10"
+progress-placeholders:
+  '*': "&f{command:progress}&7/1 commands run"
+
+options:
+  category: "Starter"
+  repeatable: false
+  sort-order: 3
+  requires:
+   - "WholeNewWorld"

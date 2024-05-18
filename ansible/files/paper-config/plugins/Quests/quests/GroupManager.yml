@@ -1,0 +1,42 @@
+# The name of this file is the quest ID. It must be alphanumeric and unique.
+
+tasks:
+ command:
+    type: "command"
+    command: "nl"
+    ignore-case: true 
+
+display:
+  name: "&bGroup Manager"
+  lore-normal:
+    - "&7Open the Namelayer Gui"
+    - "&7by running the /nl command"
+    - "&7And view how to manage groups"
+    - ""
+    - "&7This quest requires you to:"
+    - "&7 - Run the /nl Command"
+    - ""
+  lore-started:
+    - ""
+    - "&7Your current progression:"
+    - "&7 - &2{command:progress}&2&f/&21 &fcommands run"
+  type: "BOOK"
+rewards:
+  - "give {player} Emerald 1"
+rewardstring:
+ - " &6 This menu allows you to:"
+ - " &6 1. Create new groups by clicking on the apple"
+ - " &6 2. Manage groups you are part of by clicking a chestplate"
+ - " &6 Your rank in the group is represented by the type of chestplate"
+ - " &6 Ranging from leather (member) to Diamond (Owner)"
+ - " &6 These groups are how permission pertaining to many aspects of the game"
+ - " &6 Are managed by players."
+progress-placeholders:
+  '*': "&f{command:progress}&7/1 commands run"
+
+options:
+  category: "Starter"
+  repeatable: false
+  sort-order: 4
+  requires:
+   - "WholeNewWorld"
