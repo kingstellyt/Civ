@@ -9,7 +9,7 @@ tasks:
 display:
   name: "&bWhere am I?"
   lore-normal:
-    - "&7Use the \"Ott to <player>\" command"
+    - "&7Use the \"Ott\" command"
     - "&7To use your one time teleport"
     - "&7and save yourself some walking"
     - ""
@@ -23,6 +23,13 @@ display:
   type: "ENDER_PEARL"
 rewards:
   - "give {player} cooked_beef 10"
+rewardstring:
+ - " &6 Great job!"
+ - " &6 OTT or \"One Time Teleport\""
+ - " &6 allows you to teleport once to any player that accepts it"
+ - " &6 This will fast forward you into joining a settlement that"
+ - " &6 has accepted or invited you"
+ - " &6 The full command is /Ott to <player>"
 progress-placeholders:
   '*': "&f{command:progress}&7/1 commands run"
 
