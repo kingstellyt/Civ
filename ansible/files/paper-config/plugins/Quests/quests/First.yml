@@ -31,6 +31,8 @@ rewardstring:
  - " &6 Open your /Quests menu"
  - " &6 There is a small introduction with important"
  - " &6 information and commands you need to know"
+ - " &6 completing these advancements will grant you"
+ - " &6 some useful rewards while starting out"
 progress-placeholders:
   '*': "&f{time:progress}&7/1 minutes passed"
 
