@@ -26,9 +26,9 @@ rewards:
 rewardstring:
  - " &6 This menu allows you to view all factories that can be made"
  - " &6 and what recipes each factory has."
- - " &6 Recipes in these factories are more efficient and faster than"
- - " &6 manual crafting. There are also recipes that normally don't exist"
- - " &6 for decorational blocks or unique items/blocks that have a custom function"
+ - " &6 Recipes in these factories are more efficient and faster than manual crafting."
+ - " &6 There are also recipes that normally don't exist"
+ - " &6 either for decorational blocks or unique items/blocks that have custom functions"
  - " &6 "
  - " &6 click here for more info:"
  - " &9 https://wiki.civmc.net/pages/plugins/unique/factorymod"
