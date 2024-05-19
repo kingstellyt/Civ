@@ -26,9 +26,9 @@ rewards:
 rewardstring:
  - " &6 Great job!"
  - " &6 OTT or \"One Time Teleport\""
- - " &6 allows you to teleport once to any player that accepts it"
+ - " &6 allows you to teleport once to any player that accepts it."
  - " &6 This will fast forward you into joining a settlement that"
- - " &6 has accepted or invited you"
+ - " &6 has accepted or invited you."
  - " &6 The full command is /Ott to <player>"
 progress-placeholders:
   '*': "&f{command:progress}&7/1 commands run"

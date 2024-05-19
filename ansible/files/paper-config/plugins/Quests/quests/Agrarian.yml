@@ -1,0 +1,44 @@
+# The name of this file is the quest ID. It must be alphanumeric and unique.
+
+tasks:
+ command:
+    type: "command"
+    command: "rb"
+    ignore-case: true 
+
+display:
+  name: "&bAgrarian"
+  lore-normal:
+    - "&7Open the Realistic Biomes Menu"
+    - "&7by running the /rb command"
+    - "&7To learn about farming on CivMC"
+    - ""
+    - "&7This quest requires you to:"
+    - "&7 - Run the /rb Command"
+    - ""
+  lore-started:
+    - ""
+    - "&7Your current progression:"
+    - "&7 - &2{command:progress}&2&f/&21 &fcommands run"
+  type: "WHEAT"
+rewards:
+  - "give {player} LEATHER_BOOTS 1"
+rewardstring:
+ - " &6 This menu allows you to view what crops or trees"
+ - " &6 grow in this biome."
+ - " &6 Each Crop and tree grows at different speeds depending on the biome"
+ - " &6 And most take atleast half a day to grow."
+ - " &6 This is important when it comes to crops used in large amounts"
+ - " &6 for production of experience through the use factories."
+ - " &6 "
+ - " &6 click here for more info:"
+ - " &9 https://wiki.civmc.net/pages/plugins/unique/rb"
+progress-placeholders:
+  '*': "&f{command:progress}&7/1 commands run"
+
+options:
+  category: "Starter"
+  repeatable: false
+  sort-order: 6
+  requires:
+   - "WholeNewWorld"

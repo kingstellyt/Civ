@@ -30,10 +30,10 @@ rewards:
   - "give {player} cooked_beef 10"
 rewardstring:
  - " &6 Well done!"
- - " &6 Communication is key in CivMC"
+ - " &6 Communication is key on CivMC."
  - " &6 Building friendships and connections are important"
- - " &6 To securing your own succes with whatever you may plan"
- - " &6 Being known makes it easier to be trusted"
+ - " &6 to secure your succes, with whatever you may plan."
+ - " &6 Being known is to be trusted!"
 # Progress placeholders are used exclusively for the bossbar and actionbar.
 # Use the name of the task, or '*' for all tasks.
 progress-placeholders:

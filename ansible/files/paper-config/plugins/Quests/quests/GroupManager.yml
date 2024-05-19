@@ -22,15 +22,18 @@ display:
     - "&7 - &2{command:progress}&2&f/&21 &fcommands run"
   type: "BOOK"
 rewards:
-  - "give {player} Emerald 1"
+  - "give {player} LEATHER_HELMET 1"
 rewardstring:
  - " &6 This menu allows you to:"
- - " &6 1. Create new groups by clicking on the apple"
- - " &6 2. Manage groups you are part of by clicking a chestplate"
+ - " &6 1. Create new groups by clicking on the apple."
+ - " &6 2. Manage groups you are part of by clicking a chestplate."
  - " &6 Your rank in the group is represented by the type of chestplate"
- - " &6 Ranging from leather (member) to Diamond (Owner)"
- - " &6 These groups are how permission pertaining to many aspects of the game"
+ - " &6 Ranging from leather (member) to Diamond (Owner)."
+ - " &6 These groups are how permission to many aspects of the game"
  - " &6 Are managed by players."
+ - " &6 "
+ - " &6 click here for more info:"
+ - " &9 https://wiki.civmc.net/pages/plugins/essential/namelayer"
 progress-placeholders:
   '*': "&f{command:progress}&7/1 commands run"
 
