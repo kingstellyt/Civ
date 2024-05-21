@@ -22,7 +22,7 @@ display:
     - "&7 - &2{command:progress}&2&f/&21 &fcommands run"
   type: "WHEAT"
 rewards:
-  - "give {player} LEATHER_BOOTS 1"
+  - "give {player} leather_boots 1"
 rewardstring:
  - " &6 This menu allows you to view what crops or trees"
  - " &6 grow in this biome."

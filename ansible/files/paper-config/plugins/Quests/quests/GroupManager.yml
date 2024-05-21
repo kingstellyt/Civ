@@ -22,7 +22,7 @@ display:
     - "&7 - &2{command:progress}&2&f/&21 &fcommands run"
   type: "BOOK"
 rewards:
-  - "give {player} LEATHER_HELMET 1"
+  - "give {player} leather_helmet 1"
 rewardstring:
  - " &6 This menu allows you to:"
  - " &6 1. Create new groups by clicking on the apple."

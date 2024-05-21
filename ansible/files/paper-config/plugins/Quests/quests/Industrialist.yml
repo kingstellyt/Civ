@@ -7,7 +7,7 @@ tasks:
     ignore-case: true 
 
 display:
-  name: "&bAgrarian"
+  name: "&bIndustrialist"
   lore-normal:
     - "&7Open the Factorymod Menu"
     - "&7by running the /fm command"
@@ -22,7 +22,7 @@ display:
     - "&7 - &2{command:progress}&2&f/&21 &fcommands run"
   type: "CRAFTING_TABLE"
 rewards:
-  - "give {player} LEATHER_LEGGINGS 1"
+  - "give {player} leather_leggings 1"
 rewardstring:
  - " &6 This menu allows you to view all factories that can be made"
  - " &6 and what recipes each factory has."

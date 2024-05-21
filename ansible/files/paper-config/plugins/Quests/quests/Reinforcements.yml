@@ -3,35 +3,36 @@
 tasks:
  command:
     type: "command"
-    command: "fm"
+    command: "reinforcements"
     ignore-case: true 
 
 display:
-  name: "&bAgrarian"
+  name: "&bReinforcements"
   lore-normal:
-    - "&7Open the Factorymod Menu"
-    - "&7by running the /fm command"
-    - "&7To learn about industrial crafting"
+    - "&7Open the Reinforcements menu"
+    - "&7by running the /reinforcements command"
+    - "&7To learn about securing your buildings and chests"
     - ""
     - "&7This quest requires you to:"
-    - "&7 - Run the /fm Command"
+    - "&7 - Run the /reinforcements Command"
     - ""
   lore-started:
     - ""
     - "&7Your current progression:"
     - "&7 - &2{command:progress}&2&f/&21 &fcommands run"
-  type: "CRAFTING_TABLE"
+  type: "STONE"
 rewards:
-  - "give {player} leather_leggings 1"
+  - "give {player} leather_chestplate 1"
 rewardstring:
- - " &6 This menu allows you to view all factories that can be made"
- - " &6 and what recipes each factory has."
- - " &6 Recipes in these factories are more efficient and faster than manual crafting."
- - " &6 There are also recipes that normally don't exist"
- - " &6 either for decorational blocks or unique items/blocks that have custom functions"
+ - " &6 This menu allows you to view all reinforcement's details"
+ - " &6 The main one you need to know is health."
+ - " &6 Health is how many times a reinforcement has to be broken before it actually breaks"
+ - " &6 Reinforcing a chest with stone, for example, will take 50 breaks before it actually breaks."
+ - " &6 Doing this with diamond will take 2000 breaks."
+ - " &6 This is how structures and chests are kept safe from raiders, for the most part..."
  - " &6 "
  - " &6 click here for more info:"
- - " &9 https://wiki.civmc.net/pages/plugins/unique/factorymod"
+ - " &9 https://wiki.civmc.net/pages/plugins/unique/citadel"
 progress-placeholders:
   '*': "&f{command:progress}&7/1 commands run"
 
