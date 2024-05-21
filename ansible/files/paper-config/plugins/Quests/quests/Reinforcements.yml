@@ -1,0 +1,43 @@
+# The name of this file is the quest ID. It must be alphanumeric and unique.
+
+tasks:
+ command:
+    type: "command"
+    command: "fm"
+    ignore-case: true 
+
+display:
+  name: "&bAgrarian"
+  lore-normal:
+    - "&7Open the Factorymod Menu"
+    - "&7by running the /fm command"
+    - "&7To learn about industrial crafting"
+    - ""
+    - "&7This quest requires you to:"
+    - "&7 - Run the /fm Command"
+    - ""
+  lore-started:
+    - ""
+    - "&7Your current progression:"
+    - "&7 - &2{command:progress}&2&f/&21 &fcommands run"
+  type: "CRAFTING_TABLE"
+rewards:
+  - "give {player} leather_leggings 1"
+rewardstring:
+ - " &6 This menu allows you to view all factories that can be made"
+ - " &6 and what recipes each factory has."
+ - " &6 Recipes in these factories are more efficient and faster than manual crafting."
+ - " &6 There are also recipes that normally don't exist"
+ - " &6 either for decorational blocks or unique items/blocks that have custom functions"
+ - " &6 "
+ - " &6 click here for more info:"
+ - " &9 https://wiki.civmc.net/pages/plugins/unique/factorymod"
+progress-placeholders:
+  '*': "&f{command:progress}&7/1 commands run"
+
+options:
+  category: "Starter"
+  repeatable: false
+  sort-order: 6
+  requires:
+   - "WholeNewWorld"
