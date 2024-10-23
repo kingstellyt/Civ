@@ -226,11 +226,4 @@ public interface PearlConfig extends MySqlConfig, DocumentConfig {
      * @return true if they can
      */
     boolean canTakeThroughPortals();
-
-    /**
-     * Should pearled players pearl others?
-     *
-     * @return true if they can
-     */
-    boolean canPearledPlayersPearlOthers();
 }

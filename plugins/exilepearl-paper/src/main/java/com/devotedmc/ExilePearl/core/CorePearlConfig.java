@@ -541,9 +541,4 @@ final class CorePearlConfig implements DocumentConfig, PearlConfig {
     public boolean canTakeThroughPortals() {
         return doc.getBoolean("general.can_take_through_portals", false);
     }
-
-    @Override
-    public boolean canPearledPlayersPearlOthers() {
-        return doc.getBoolean("general.can_pearled_players_pearl_others", true);
-    }
 }
