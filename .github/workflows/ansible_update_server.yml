@@ -43,6 +43,9 @@ jobs:
           requirements: ansible/requirements.yml
           key: ${{secrets.SSH_PRIVATE_KEY}}
           known_hosts: ${{secrets.SSH_KNOWN_HOSTS}}
+          configuration: |
+            [ssh_connection]
+            ssh_args = -o ControlMaster=auto -o ControlPersist=60s
           options: |
             --inventory ./ansible/inventories/civmc-${{inputs.environment}}.yml
             -e "ansible_become_password=${{secrets.SUDO_PASSWORD}}"
