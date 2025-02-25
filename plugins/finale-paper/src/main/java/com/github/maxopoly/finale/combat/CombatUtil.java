@@ -3,7 +3,6 @@ package com.github.maxopoly.finale.combat;
 import com.github.maxopoly.finale.Finale;
 import com.github.maxopoly.finale.combat.event.CritHitEvent;
 import com.github.maxopoly.finale.combat.knockback.KnockbackStrategy;
-import com.github.maxopoly.finale.misc.knockback.KnockbackConfig;
 
 import java.util.Iterator;
 import java.util.List;
@@ -22,7 +21,6 @@ import net.minecraft.tags.DamageTypeTags;
 import net.minecraft.util.Mth;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.world.damagesource.DamageSources;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
@@ -36,9 +34,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
 import org.bukkit.craftbukkit.entity.CraftPlayer;
 import org.bukkit.craftbukkit.util.CraftVector;
-import org.bukkit.damage.DamageType;
 import org.bukkit.entity.Player;
-import org.bukkit.event.entity.EntityCombustByEntityEvent;
 import org.bukkit.event.entity.EntityExhaustionEvent;
 import org.bukkit.event.player.PlayerVelocityEvent;
 import org.bukkit.util.Vector;
@@ -54,12 +50,12 @@ public class CombatUtil {
         }
     }
 
-    public static void attack(Player attacker, Entity victim) {
-        attack(((CraftPlayer) attacker).getHandle(), victim);
+    public static void attack(Player attacker, Entity victim, float fallDistance) {
+        attack(((CraftPlayer) attacker).getHandle(), victim, fallDistance);
     }
 
     //see net.minecraft.world.entity.player.Player#attack(Entity) to update this
-    public static void attack(ServerPlayer attacker, Entity victim) {
+    public static void attack(ServerPlayer attacker, Entity victim, float fallDistance) {
         CombatConfig config = Finale.getPlugin().getManager().getCombatConfig();
         SprintHandler sprintHandler = Finale.getPlugin().getManager().getSprintHandler();
         if (victim.isAttackable() && !victim.skipAttackInteraction(attacker)) {
@@ -91,7 +87,7 @@ public class CombatUtil {
                     dealtExtraKnockback = true;
                 }
 
-                boolean shouldCrit = shouldDamage && attacker.fallDistance > 0.0F && !attacker.onGround() && !attacker.onClimbable() && !attacker.isInWater()
+                boolean shouldCrit = shouldDamage && fallDistance > 0.0F && !attacker.onGround() && !attacker.onClimbable() && !attacker.isInWater()
                     && !attacker.hasEffect(MobEffects.BLINDNESS) && !attacker.isPassenger() && victim instanceof LivingEntity;
                 shouldCrit = shouldCrit && !sprintHandler.isSprinting(attacker);
                 if (shouldCrit) {

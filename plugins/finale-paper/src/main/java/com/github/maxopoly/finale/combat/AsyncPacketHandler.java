@@ -75,6 +75,7 @@ public class AsyncPacketHandler extends PacketAdapter implements Listener {
                 return;
             }
             event.setCancelled(true);
+            float fallDistance = attacker.getFallDistance();
             new BukkitRunnable() {
 
                 @Override
@@ -102,7 +103,7 @@ public class AsyncPacketHandler extends PacketAdapter implements Listener {
                         return;
                     }
 
-                    CombatUtil.attack(attacker, ((CraftEntity) target).getHandle());
+                    CombatUtil.attack(attacker, ((CraftEntity) target).getHandle(), fallDistance);
                 }
             }.runTask(Finale.getPlugin());
         } else if (packetType == PacketType.Play.Client.ENTITY_ACTION) {
